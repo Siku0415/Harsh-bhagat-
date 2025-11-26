@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1121395260015069');
+  fbq('track', 'PageView');
+  
+  /* Subscribe Event With Value */
+  fbq('track', 'Subscribe', {
+    value: 199,
+    currency: 'INR'
+  });
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1121395260015069&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HARSH BHAGAT OFFICIAL</title>
+  <!-- Open Graph (good for Meta) -->
+  <meta property="og:title" content="Rochit Singh — Market Insights" />
+  <meta property="og:description" content="Real-time market ideas, educational analysis and community updates. Not financial advice." />
+  <meta property="og:image" content="/path/to/your-photo.jpg" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --accent1: #1572ff;
+      --accent2: #00c6ff;
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --muted:#6b7280;
+      --radius: 14px;
+      --shadow: 0 8px 30px rgba(20,25,40,0.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(180deg,var(--bg),#fff); color:#0f172a;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+
+    .container{max-width:920px;margin:28px auto;padding:24px}
+
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px}
+
+    .header{display:flex;gap:20px;align-items:center}
+    .avatar{
+      width:110px;height:110px;border-radius:999px;overflow:hidden;border:6px solid #fff;box-shadow:0 6px 20px rgba(0,0,0,0.08);
+      flex:0 0 110px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center
+    }
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+
+    .title h1{margin:0;font-size:22px;letter-spacing:0.6px}
+    .title p{margin:6px 0 0;color:var(--muted);font-size:14px}
+
+    .cta-row{margin-top:20px;display:flex;gap:12px;align-items:center}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:10px;border:none;cursor:pointer;text-decoration:none;font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#fff}
+    .btn-ghost{background:transparent;border:1px solid #e6eefc;color:var(--accent1)}
+
+    .highlight{margin-top:18px;padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(21,114,255,0.06), rgba(0,198,255,0.03));color:#013a63;font-weight:600}
+
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:22px}
+    .feature{background:linear-gradient(180deg,#fff,#fbfdff);padding:16px;border-radius:12px;border:1px solid rgba(15,23,42,0.03)}
+    .feature h4{margin:0 0 8px;font-size:15px}
+    .feature p{margin:0;color:var(--muted);font-size:14px}
+
+    .lead-gen{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+    .lead-gen input{flex:1 1 220px;padding:12px;border-radius:10px;border:1px solid #e6eefc}
+    .lead-gen .submit{background:var(--accent1);color:white;padding:12px 18px;border-radius:10px;border:none}
+
+    .note{font-size:13px;color:var(--muted);margin-top:12px}
+
+    .disclaimer{margin-top:18px;background:#fff3f3;border-left:4px solid #f97373;padding:12px;border-radius:8px;color:#7a1f1f}
+
+    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media(max-width:640px){.header{flex-direction:row}.title h1{font-size:18px}}
+  
+
+    /* Sticky Telegram Button */
+    .sticky-telegram {
+      position: fixed;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(90deg,var(--accent1),var(--accent2));
+      color: #fff;
+      padding: 14px 26px;
+      border-radius: 40px;
+      box-shadow: 0 8px 30px rgba(21,114,255,0.35);
+      font-weight: 700;
+      font-size: 17px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      z-index: 999;
+      animation: floatPulse 2.5s ease-in-out infinite;
+    }
+
+    @keyframes floatPulse {
+      0% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(-6px); }
+      100% { transform: translateX(-50%) translateY(0); }
+    }
+
+</style>
+  <!-- Added: Blur Glass Header + Scroll Reveal + Haptics + Shimmer Loader + Gradient Border + Exit Popup -->
+
+  <style>
+    /* 1. Gradient Animated Border */
+    .card {
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before{
+      content:"";
+      position:absolute;inset:0;
+      padding:2px;
+      border-radius:var(--radius);
+      background:linear-gradient(130deg,#1572ff,#00c6ff,#7dd3fc,#1572ff);
+      background-size:300% 300%;
+      animation:borderFlow 6s linear infinite;
+      -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+      -webkit-mask-composite:xor;
+      mask-composite:exclude;
+    }
+    @keyframes borderFlow{
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+
+    /* 3. Shimmer Image Loader */
+    .avatar.loading img{opacity:0}
+    .avatar.loading{
+      position:relative;
+      background:linear-gradient(90deg,#e0e0e0 0%,#f4f4f4 50%,#e0e0e0 100%);
+      background-size:200% 100%;
+      animation:shimmer 1.8s infinite;
+    }
+    @keyframes shimmer{
+      0%{background-position:-200% 0}
+      100%{background-position:200% 0}
+    }
+
+    /* 6. Scroll Reveal */
+    .reveal{opacity:0;transform:translateY(20px);transition:0.6s}
+    .reveal.show{opacity:1;transform:translateY(0)}
+
+    /* 7. Exit Popup */
+    #exitPopup{
+      position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.65);
+      display:none;align-items:center;justify-content:center;z-index:99999;
+    }
+    #exitPopup .box{
+      background:white;padding:24px;border-radius:16px;
+      max-width:90%;width:320px;text-align:center;box-shadow:var(--shadow);
+    }
+    #exitPopup button{
+      margin-top:14px;padding:12px 18px;border:none;border-radius:10px;
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#fff;font-weight:700;
+      width:100%;cursor:pointer;
+    }
+
+    /* 8. Haptic Touch Effect */
+    .btn-primary:active, .sticky-telegram:active {transform:scale(.97)}
+  </style>
+</head>
+<body>
+
+<!-- Exit Popup -->
+<div id="exitPopup">
+  <div class="box">
+    <h3>Leaving already?</h3>
+    <p>Join our Telegram community for instant market updates!</p>
+    <button onclick="window.location.href='https://t.me/+TNth7mU73BthNTg9'">Join Telegram 🚀</button>
+  </div>
+</div>
+
+<script>
+// 3. Remove shimmer when image loads
+window.addEventListener('load',()=>{
+  document.getElementById('avatar').classList.remove('loading');
+});
+
+// 6. Scroll reveal
+const revealEls=document.querySelectorAll('.feature, .highlight, .cta-row');
+const obs=new IntersectionObserver((e)=>{
+  e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('show')})
+},{threshold:0.1});
+revealEls.forEach(el=>{el.classList.add('reveal');obs.observe(el)});
+
+// 7. Exit Popup trigger
+let popupShown=false;
+document.addEventListener('mouseleave',()=>{
+  if(!popupShown){
+    document.getElementById('exitPopup').style.display='flex';
+    popupShown=true;
+  }
+});
+
+// 8. Haptics (supports smartphones)
+function vibrate(ms){if(navigator.vibrate)navigator.vibrate(ms);}
+const tgBtn=document.querySelector('.sticky-telegram');
+tgBtn.addEventListener('click',()=>vibrate(20));
+</script>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <div class="avatar loading" id="avatar">
+          <!-- Replace /path/to/your-photo.jpg with your uploaded photo filename -->
+          <img id="hero-photo" src="your-photo.jpg" alt="Your Photo">
+        </div>
+        <div class="title">
+          <h1> harsh bhagat official</h1>
+          <p>Market ideas • Educational analysis • Community updates</p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://t.me/+TNth7mU73BthNTg9" target="_blank" rel="noopener">Join Telegram</a>
+            
+          </div>
+
+          <div class="highlight">No promises — Just ideas & education. Not financial advice.</div>
+        </div>
+      </div>
+
+      <div class="features" style="margin-top:24px">
+        <div class="feature">
+          <h4>Live Market Insights</h4>
+          <p>Short, timely market observations and trade ideas for educational purposes.</p>
+        </div>
+        <div class="feature">
+          <h4>Educational Analysis</h4>
+          <p>Step-by-step explanations of setups, risk management and chart reading.</p>
+        </div>
+        <div class="feature">
+          <h4>Community Alerts</h4>
+          <p>Real-time updates and discussions inside the Telegram community.</p>
+        </div>
+      </div>
+
+      
+
+      <div class="disclaimer">
+        <strong>Disclaimer:</strong> Content on this page is for educational purposes only and is not financial advice. Past performance does not guarantee future results. Always do your own research.
+      </div>
+
+    </div>
+
+    <footer>
+      © <span id="year"></span> harsh bhagat official. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const form = e.target;
+      const data = {
+        name: form.name.value.trim(),
+        email: form.email.value.trim()
+      };
+      // Simple front-end demo: in production, post to your server or use a verified lead-gen provider.
+      alert('Thanks ' + data.name + '! We have saved your email: ' + data.email + '
+
+Note: This is a demo. Hook this form to your server to capture leads.');
+      form.reset();
+    }
+  </script>
+  <a href="https://t.me/+TNth7mU73BthNTg9" target="_blank" class="sticky-telegram">Join Telegram 🚀</a>
+
+</body>
+</html>
