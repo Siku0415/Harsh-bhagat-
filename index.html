@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 
-  <!-- 16 Sec Auto Redirect -->
-  <meta http-equiv="refresh" content="16; url=https://t.me/+TNth7mU73BthNTg9">
+  <!-- Auto Redirect Removed (meta refresh) -->
+  <!-- Countdown script will handle redirect -->
 
   <!-- Meta Pixel Code -->
   <script>
@@ -17,16 +17,12 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '1121395260015069');
   fbq('track', 'PageView');
-  
+
   fbq('track', 'Subscribe', {
     value: 199,
     currency: 'INR'
   });
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1121395260015069&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
 
   <!-- Speed Optimization -->
   <link rel="preload" as="image" href="your-photo.jpg">
@@ -73,6 +69,7 @@
       -webkit-mask-composite:xor;
       mask-composite:exclude;
     }
+
     @keyframes borderFlow{
       0%{background-position:0% 50%}
       50%{background-position:100% 50%}
@@ -110,7 +107,6 @@
 
     footer{text-align:center;color:var(--muted);margin-top:25px;font-size:13px}
 
-    /* Sticky Button */
     .sticky-telegram{
       position:fixed;bottom:18px;left:50%;transform:translateX(-50%);
       background:linear-gradient(90deg,var(--accent1),var(--accent2));
@@ -119,12 +115,24 @@
       font-size:17px;font-weight:700;z-index:999;text-decoration:none;
       animation:floatPulse 2.5s ease-in-out infinite;
     }
+
     @keyframes floatPulse{
       0%{transform:translateX(-50%) translateY(0)}
       50%{transform:translateX(-50%) translateY(-6px)}
       100%{transform:translateX(-50%) translateY(0)}
     }
 
+    /* COUNTDOWN STYLE */
+    .countdown-box{
+      margin-top:14px;
+      padding:10px 14px;
+      background:#e8f1ff;
+      border-radius:10px;
+      font-size:15px;
+      font-weight:600;
+      color:#1572ff;
+      width:max-content;
+    }
   </style>
 </head>
 
@@ -143,12 +151,16 @@
         <p>Market ideas  Educational analysis • Updates</p>
 
         <a class="btn btn-primary" 
-   href="https://t.me/+TNth7mU73BthNTg9" 
-   target="_blank" 
-   rel="noopener">
-  Join Telegram
+        href="https://t.me/+TNth7mU73BthNTg9" 
+        target="_blank" 
+        rel="noopener">
+        Join Telegram
         </a>
-        
+
+        <!-- COUNTDOWN TIMER -->
+        <div class="countdown-box">
+          Redirecting in <span id="counter">12</span> sec...
+        </div>
 
         <div class="highlight">
           No promises  Only education. Not financial advice.
@@ -188,6 +200,20 @@
 
 <script>
   document.getElementById("year").innerText = new Date().getFullYear();
+
+  let time = 12;
+  const counter = document.getElementById("counter");
+  const redirectLink = "https://t.me/+TNth7mU73BthNTg9";
+
+  const timer = setInterval(() => {
+    time--;
+    counter.textContent = time;
+
+    if(time <= 0){
+      clearInterval(timer);
+      window.location.href = redirectLink;
+    }
+  }, 1000);
 </script>
 
 </body>
