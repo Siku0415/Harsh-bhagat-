@@ -1,220 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Auto Redirect Removed (meta refresh) -->
-  <!-- Countdown script will handle redirect -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Harsh bhagat– Market Education</title>
 
   <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1121395260015069');
-  fbq('track', 'PageView');
-
-  fbq('track', 'Subscribe', {
-    value: 199,
-    currency: 'INR'
-  });
-  </script>
-
-  <!-- Speed Optimization -->
-  <link rel="preload" as="image" href="your-photo.jpg">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HARSH BHAGAT OFFICIAL</title>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1121395260015069');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2101646057327760&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
   <style>
-    :root{
-      --accent1: #1572ff;
-      --accent2: #00c6ff;
-      --bg: #f6f8fb;
-      --card: #ffffff;
-      --muted:#6b7280;
-      --radius: 14px;
-      --shadow: 0 8px 30px rgba(20,25,40,0.08);
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(180deg, #e3f2fd, #fff);
+      color: #222;
+      text-align: center;
     }
-
-    *{box-sizing:border-box;margin:0;padding:0}
-
-    body{
-      font-family:Inter, system-ui, Arial;
-      background: linear-gradient(180deg,var(--bg),#fff);
+    .card {
+      max-width: 420px;
+      background: #fff;
+      margin: 60px auto;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     }
-
-    .container{max-width:920px;margin:28px auto;padding:24px}
-
-    .card{
-      background:var(--card);border-radius:var(--radius);
-      padding:28px;box-shadow:var(--shadow);
-      position:relative;overflow:hidden;
+    .profile img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
     }
-
-    .card::before{
-      content:"";
-      position:absolute;inset:0;padding:2px;
-      border-radius:var(--radius);
-      background:linear-gradient(130deg,#1572ff,#00c6ff,#7dd3fc,#1572ff);
-      background-size:300% 300%;
-      animation:borderFlow 6s linear infinite;
-      -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
-      -webkit-mask-composite:xor;
-      mask-composite:exclude;
+    h2 {
+      margin-top: 15px;
+      font-size: 1.4rem;
     }
-
-    @keyframes borderFlow{
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
+    .sub {
+      color: #444;
+      font-size: 0.95rem;
+      margin-top: -5px;
     }
-
-    .header{display:flex;gap:20px;align-items:center}
-
-    .avatar{
-      width:110px;height:110px;border-radius:999px;overflow:hidden;
-      background:#eee;
-      border:6px solid #fff;
-      box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
     }
-    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-
-    .title h1{font-size:22px;font-weight:700;text-transform:capitalize}
-    .title p{margin-top:5px;color:var(--muted);font-size:14px}
-
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
-    .btn-primary{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white}
-
-    .highlight{
-      margin-top:16px;background:rgba(21,114,255,0.06);
-      padding:12px;border-radius:10px;font-size:14px;
+    .btn:hover {
+      transform: scale(1.05);
     }
-
-    .features{margin-top:22px;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-    .feature{background:white;padding:16px;border-radius:12px;font-size:15px}
-
-    .disclaimer{
-      margin-top:20px;background:#fff3f3;border-left:4px solid #f97373;
-      padding:12px;border-radius:8px;font-size:13px;
+    ul {
+      list-style: none;
+      text-align: left;
+      padding: 0 20px;
+      margin-top: 20px;
+      font-size: 0.95rem;
     }
-
-    footer{text-align:center;color:var(--muted);margin-top:25px;font-size:13px}
-
-    .sticky-telegram{
-      position:fixed;bottom:18px;left:50%;transform:translateX(-50%);
-      background:linear-gradient(90deg,var(--accent1),var(--accent2));
-      color:#fff;padding:14px 26px;border-radius:40px;
-      box-shadow:0 8px 30px rgba(21,114,255,0.35);
-      font-size:17px;font-weight:700;z-index:999;text-decoration:none;
-      animation:floatPulse 2.5s ease-in-out infinite;
+    ul li {
+      margin: 10px 0;
     }
-
-    @keyframes floatPulse{
-      0%{transform:translateX(-50%) translateY(0)}
-      50%{transform:translateX(-50%) translateY(-6px)}
-      100%{transform:translateX(-50%) translateY(0)}
-    }
-
-    /* COUNTDOWN STYLE */
-    .countdown-box{
-      margin-top:14px;
-      padding:10px 14px;
-      background:#e8f1ff;
-      border-radius:10px;
-      font-size:15px;
-      font-weight:600;
-      color:#1572ff;
-      width:max-content;
+    .note {
+      margin-top: 20px;
+      font-size: 0.92rem;
+      color: #000;
+      line-height: 1.5;
     }
   </style>
 </head>
-
 <body>
 
-<div class="container">
   <div class="card">
-    
-    <div class="header">
-      <div class="avatar">
-        <img src="your-photo.jpg" loading="lazy">
-      </div>
-
-      <div class="title">
-        <h1>Harsh bhagat official </h1>
-        <p>Market ideas  Educational analysis • Updates</p>
-
-        <a class="btn btn-primary" 
-        href="https://t.me/+TNth7mU73BthNTg9" 
-        target="_blank" 
-        rel="noopener">
-        Join Telegram
-        </a>
-
-        <!-- COUNTDOWN TIMER -->
-        <div class="countdown-box">
-          Redirecting in <span id="counter">12</span> sec...
-        </div>
-
-        <div class="highlight">
-          No promises  Only education. Not financial advice.
-        </div>
-      </div>
+    <div class="profile">
+      <img src="logo.jpg" alt="Profile Photo" />
     </div>
 
-    <div class="features">
-      <div class="feature">
-        <h4>Live Market Insights</h4>
-        Short, timely observations and ideas.
-      </div>
+    <h2> harsh bhagat Official</h2>
+    <p class="sub">Market Education • Chart Insights • Learning Community</p>
 
-      <div class="feature">
-        <h4>Educational Analysis</h4>
-        Learn strategies and charting skills.
-      </div>
+    <!-- Telegram Button -->
+    <a href="#" class="btn" id="joinBtn">Join Telegram</a>
 
-      <div class="feature">
-        <h4>Community Alerts</h4>
-        Real-time discussions & updates.
-      </div>
-    </div>
+    <h3 style="color:red; margin-top:25px;">What You Get Inside</h3>
+    <ul>
+      <li>📚 Educational market insights</li>
+      <li>📈 Chart breakdowns & explanations</li>
+      <li>📝 Learning discussions</li>
+      <li>💬 Community interaction</li>
+    </ul>
 
-    <div class="disclaimer">
-      <strong>Disclaimer:</strong> Educational content only. Not financial advice.
-    </div>
-
+    <p class="note">
+      ⚠️ <b>Disclaimer:</b>  
+      This community is for *education only*.  
+      No financial advice, signals, accuracy claims,  
+      or earning guarantees are provided.
+    </p>
   </div>
 
-  <footer>
-     <span id="year"></span> harsh bhagat official.
-  </footer>
-</div>
+  <!-- Safe Subscribe Event -->
+  <script>
+    document.getElementById("joinBtn").addEventListener("click", function(e) {
+      e.preventDefault();
 
-<a href="https://t.me/+TNth7mU73BthNTg9" target="_blank" class="sticky-telegram">Join Telegram now</a>
+      fbq('track', 'Subscribe', { value: 1.00, currency: 'USD' });
 
-<script>
-  document.getElementById("year").innerText = new Date().getFullYear();
-
-  let time = 12;
-  const counter = document.getElementById("counter");
-  const redirectLink = "https://t.me/+TNth7mU73BthNTg9";
-
-  const timer = setInterval(() => {
-    time--;
-    counter.textContent = time;
-
-    if(time <= 0){
-      clearInterval(timer);
-      window.location.href = redirectLink;
-    }
-  }, 1000);
-</script>
+      setTimeout(function() {
+        window.location.href = "https://t.me/+H5hsfzUqHgY1OTU1";
+      }, 500);
+    });
+  </script>
 
 </body>
 </html>
